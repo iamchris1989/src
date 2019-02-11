@@ -1,0 +1,17 @@
+<p>
+  app2 works!
+</p>
+<h1>點擊選項來控制DOM</h1>
+<div>
+  <p #document1>我是document1下的一個text元素</p>
+<button (click)="createElement()">生成HTML元素(取得DOM 在#document1下生成)</button><br>
+<button (click)="removeFirstElement()">移除第1個</button><br>
+<button (click)="removeLastElement()">移除最後1個</button><br>
+<button (click)="removeAllElement()">移除#document1下所有child html</button><br>
+</div>
+<hr>
+
+  <button (click)="createItem()" #document2>新增項目</button><br>
+  <div *ngIf="count3>1">
+    編號  <input type="text" value="產品名稱" readonly><input type="text" value="價格" readonly>
+  </div>

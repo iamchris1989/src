@@ -1,0 +1,14 @@
+<p>
+  app4 works!
+</p>
+<div><button (click)="search()">查詢會員資料</button></div>
+
+<table appDirectiveTest>
+  <tr *ngFor="let data of datas">
+    <td>{{data.id}} </td>
+    <td>{{data.name }}</td>
+    <td>{{data.birthday | date:'yyyy年MM月dd日 HH:mm'}}</td>
+  </tr>
+</table>
+
+

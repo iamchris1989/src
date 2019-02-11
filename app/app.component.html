@@ -1,0 +1,18 @@
+
+  
+<div style="text-align:center" >
+  <h1 >
+    Welcome to {{ title }}!
+  </h1>
+  </div>
+  <table border="1"align="center" ><tr><td><a class="routerLink" routerLink="/app1" >app1_Router</a></td>
+    <td><a class="routerLink" routerLink="/app2">app2_Router</a></td>
+    <td><a class="routerLink" routerLink="/app4">app4_Router</a></td></tr>
+  <tr><td colspan="3"><router-outlet></router-outlet></td></tr>
+  </table>
+  status:{{status}}
+<app-app3 [status]="status" (changeStatus)="change($event)"></app-app3>
+
+
+ 
+

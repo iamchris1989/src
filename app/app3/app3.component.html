@@ -1,0 +1,17 @@
+<p>
+  app3 works!
+</p>
+
+status:{{status}}
+<div *ngIf="status==='未登入';else logoutButton">
+  <label>
+    <input [(ngModel)]="account" placeholder="請輸入帳號">
+  </label><br>
+  <label>
+      <input [(ngModel)]="password" placeholder="請輸入密碼">
+    </label><br>
+    <button (click)="login()">登入</button>
+</div>
+<ng-template #logoutButton>
+  <button (click)="logout()">登出</button>
+</ng-template>
