@@ -11,6 +11,8 @@ import { DirectiveTestDirective } from './myDirective/directive-test.directive';
 import { App4Component } from './app4/app4.component';
 import{MemberService} from './service/member.service';
 import { InjectionService } from './config/MyDependencyInjection';
+import { App5HttpclientComponent } from './app5-httpclient/app5-httpclient.component';
+import { HttpClientModule }    from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +20,15 @@ import { InjectionService } from './config/MyDependencyInjection';
     App2Component,
     App3Component,
     DirectiveTestDirective,
-    App4Component
+    App4Component,
+    App5HttpclientComponent
+    
   ],
   imports: [
     BrowserModule,
     MyrouterModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [InjectionService],
   bootstrap: [AppComponent]
